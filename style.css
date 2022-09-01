@@ -53,7 +53,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 1.25em 50px;
 }
 
 .bg-center,
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -366,7 +366,7 @@ a:hover {
     .site-navigation {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 1.25em;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
@@ -395,7 +395,7 @@ a:hover {
         width: 100%;
         right: 0;
         margin-right: 0px;
-        margin-top: 20px;
+        margin-top: 1.25em;
     }
     .nav-center.mini-nav .navbar-toggle {
         float: none;
@@ -437,7 +437,7 @@ nav .caret {
 
 .mg-md {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .mg-lg {
@@ -514,8 +514,8 @@ button {
     width: 40px;
     height: 40px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1.25em;
+    right: 1.25em;
     opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
@@ -577,7 +577,7 @@ a[data-lightbox]:hover img {
 }
 
 .lightbox-caption {
-    padding: 20px;
+    padding: 1.25em;
     color: #FFF;
     background: rgba(0, 0, 0, .5);
     position: absolute;
@@ -590,8 +590,8 @@ a[data-lightbox]:hover img {
     color: #FFF;
     font-size: 30px;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.25em;
+    right: 1.25em;
     z-index: 20;
     background: rgba(0, 0, 0, .5);
     border: none;
@@ -609,7 +609,7 @@ a[data-lightbox]:hover img {
 
 .next-lightbox,
 .prev-lightbox {
-    font-size: 20px;
+    font-size: 1.25em;
     color: rgba(255, 255, 255, .9);
     background: rgba(0, 0, 0, .5);
     transition: all .2s ease-in-out;
@@ -669,15 +669,15 @@ a {
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.25em;
     text-align: center;
     font-weight: lighter;
-    max-width: 520px;
+    max-width: 51.25em;
     margin: auto auto auto auto;
 }
 
 p {
-    font-size: 11px;
+    font-size: 1em;
 }
 
 .tight-width-whitespace {
@@ -685,8 +685,12 @@ p {
     margin: auto auto auto auto;
 }
 
+.logo__img{
+    width: 100px;
+    height: 100px;
+}
 .h1 {
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: "Open Sans";
 }
 
@@ -741,6 +745,8 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 270px;
+    height: 270px;
 }
 
 .portfolio-row {
@@ -817,18 +823,14 @@ h4 {
     background-image: url("img/lines-h2-bg.png");
 }
 
-.bg-banniere {
-    background-image: url("img/agence-la-panthere.webp");
-}
-
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
     .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 1.25em;
+        padding-right: 1.25em;
     }
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
@@ -883,7 +885,7 @@ h4 {
     }
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
+        padding: 0 1.25em;
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
@@ -907,6 +909,9 @@ h4 {
     }
     .b-parallax {
         background-attachment: scroll;
+    }
+    .bg-banniere {
+        background-image: url("img/agence-la-panthere--mobile.webp");
     }
     .navbar .nav {
         padding-top: 0;
@@ -962,8 +967,8 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
-        width: auto;
+        height: 40px;
+        width: 217px;
     }
     .nav-invert .navbar-header {
         float: none;
@@ -1005,7 +1010,7 @@ h4 {
         margin-top: 5px;
     }
     .voffset-md {
-        margin-top: 20px;
+        margin-top: 1.25em;
     }
     .voffset-lg {
         margin-top: 30px;
@@ -1024,7 +1029,12 @@ h4 {
     }
     .blocsapp-device-iphone5 img {
         width: 180px;
-        height: 320px;
+        height: 31.25em;
+    }
+    .portfolio-thumb {
+        width: 300px;
+        height: 300px;
+        margin: auto;
     }
 }
 
@@ -1038,5 +1048,18 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+@media (min-width: 768px){
+    .bg-banniere {
+        background-image: url("img/agence-la-panthere.webp");
+    }
+}
+
+@media (max-width: 991px){
+    li > a{
+        line-height: 3em;
+        letter-spacing: .08em;
     }
 }
