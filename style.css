@@ -23,6 +23,14 @@ a:hover {
     cursor: pointer;
 }
 
+a:focus-visible {
+    outline: 4px dashed darkorange!important;
+}
+
+.btn:focus-visible {
+    outline: 4px dashed darkorange!important;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
