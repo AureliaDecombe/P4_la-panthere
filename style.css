@@ -23,6 +23,14 @@ a:hover {
     cursor: pointer;
 }
 
+a:focus-visible {
+    outline: 4px dashed darkorange!important;
+}
+
+.btn:focus-visible {
+    outline: 4px dashed darkorange!important;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -96,7 +104,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.webp"), rgb(71, 16, 11);
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -299,6 +307,11 @@ article{
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+}
+
+.navbar-header img{
+    width: 250px;
+    height: 70px;
 }
 
 .navbar-brand {
@@ -790,19 +803,19 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #9b4218;
 }
 
 .tc-white {
-    color: rgb(243 151 108)!important;
+    color: #fff!important;
     font-weight: bold;
 }
 
 .intro-contact{    
-    color: rgb(253, 234, 224)!important;
+    color: #fff!important;
 }
 .intro-contact--lighter{
-    color: rgb(253, 234, 224)!important;
+    color: #fff!important;
     font-size: 2em;
 }
 .tight-width-whitespace {    
@@ -810,7 +823,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: rgba(243, 151, 108, 0.8);
+    background: #98380B;
     color: #FFFFFF!important;
     font-size: 1.3em;
 }
@@ -853,19 +866,21 @@ h4 {
     background-image: url("img/image-de-presentation.webp");
 }
 
-.almost-black, .almost-black__i{
+.almost-white, .almost-white__i, .almost-white__title{
     color: rgba(255, 255, 255, 0.85)!important;
-    font-size: 1.4em;
 }
-.almost-black__i:hover{
+.almost-white__i:hover{
     color: rgba(255, 255, 255, 0.5)!important;
+}
+.almost-white__title{
+    font-size: 1.4em;
 }
 
 li > a{
-    color: rgba(0, 0, 0, .9)!important;
+    color: #000000!important;
 }
 li > a:hover{
-    color: rgba(0, 0, 0, .5)!important;
+    color: rgba(0, 0, 0, 0.5)!important;
 }
 
 @media (max-width: 1024px) {
